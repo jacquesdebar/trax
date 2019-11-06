@@ -1,0 +1,220 @@
+
+.overall {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.overall>div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.loggedOut {
+  text-align: center;
+}
+
+div.loggedIn>div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.recents {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.example>div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 9pt;
+}
+
+/** New Relases **/
+
+.newReleases h2, .newReleases h3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.newSingles, .newAlbums {
+  width: 550px;
+}
+
+.newSingles .newContent {
+  border-right: 2px solid black;
+  padding-right: 50px;
+}
+
+.newAlbums .newContent {
+  border-left: 2px solid black;
+  padding-left: 50px;
+}
+
+.newDrop-block {
+  height: 200px;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.newAlbums .newDrop-block {
+  flex-direction: row;
+}
+
+.newAlbums .newDrop-block {
+  flex-direction: row-reverse;
+}
+
+.newDrop-img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newDrop-img>img {
+  height: 100px;
+  width: 100px;
+}
+
+.newDrop-info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newDrop-artist {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.newDrop-type {
+  font-size: 0.7em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+tr:first-child {
+  border: 2px solid black;
+}
+
+/** Recent **/
+.recents h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.recent-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 9pt;
+}
+
+.recent-img img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.recent-under>div {
+  margin-top: 5px;
+}
+
+.recent-artist {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.recent-album {
+  font-size: 0.7em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+/** My Artists **/
+.myList h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/** OTHER **/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.0em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Helvetica, Arial;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Buttons **/
+
+.btn {
+  padding: 0.9em 1.8em;
+  border-radius: 2em;
+  background-color: #1DB954;
+  color: white;
+  font-size: 3vmin;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: white;
+  color: #1DB954;
+  text-decoration: underline;
+}
