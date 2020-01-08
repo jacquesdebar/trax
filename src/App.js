@@ -189,7 +189,7 @@ class App extends Component {
   getMostPlayedTracks (token) {
     // Make a call using the token
     $.ajax({
-      url: 'https://api.spotify.com/v1/me/top/tracks?time_range=short`_term&limit=50',
+      url: 'https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=50',
       type: 'GET',
       beforeSend: (xhr) => {
         xhr.setRequestHeader('Authorization', 'Bearer ' + token)
@@ -443,6 +443,7 @@ class App extends Component {
                     </li>
                   ))}
                 </ol>
+                {/*
                 <br/>
                 <h2>By global popularity:</h2>
                 <ol>
@@ -451,7 +452,7 @@ class App extends Component {
                       {`${item.name}: ${item.popularity}`}
                     </li>
                   ))}
-                </ol>
+                  </ol> */ }
               </div>
             </div>
             <div className="myList">
